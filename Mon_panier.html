@@ -22,28 +22,117 @@
           </div>
       
           <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="Accueil.html">Accueil</a>
-              <a class="navbar-item" href="Liste_produits.html">Produits</a>
-            </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button is-primary" href="#">
-                    <strong>S'inscrire</strong>
-                  </a>
-                  <a class="button is-light" href="#">
-                    Se connecter
-                  </a>
-                    <span class="button" >
-                        <i class="fas fa-shopping-cart"></i>
-                    </span>
+                <div class="navbar-start">
+                    <a class="navbar-item" href="Accueil.html">Accueil</a>
+                    <a class="navbar-item" href="Liste_produits.html">Produits</a>
                 </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" href="Inscription.html">
+                                <strong>S'inscrire</strong>
+                            </a>
+                            <a class="button is-light" href="Connexion.html">
+                                Se connecter
+                            </a>
+                            <a class="button" href="Mon_panier.html">
+                              <span class="icon">
+                                  <i class="fas fa-shopping-cart"></i>
+                              </span>
+                              <span class="tag is-primary">0</span>
+                            </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
+        
+
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-two-thirds">
+              <h1 class="title">Mon panier</h1>
+              <table class="table is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Produit 1</td>
+                    <td>10€</td>
+                    <td>
+                      <div class="field has-addons">
+                        <div class="control">
+                          <input class="input" type="number" value="1">
+                        </div>
+                        <div class="control">
+                          <a class="button is-primary">
+                            <i class="fas fa-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>10€</td>
+                    <td>
+                      <a class="delete"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Produit 2</td>
+                    <td>20€</td>
+                    <td>
+                      <div class="field has-addons">
+                        <div class="control">
+                          <input class="input" type="number" value="1">
+                        </div>
+                        <div class="control">
+                          <a class="button is-primary">
+                            <i class="fas fa-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>20€</td>
+                    <td>
+                      <a class="delete"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h2 class="subtitle">Résumé de la commande</h2>
+                <table class="table is-fullwidth">
+                  <tbody>
+                    <tr>
+                      <td>Sous-total</td>
+                      <td>30€</td>
+                    </tr>
+                    <tr>
+                      <td>Frais de livraison</td>
+                      <td>5€</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>35€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="button is-primary is-fullwidth">Commander</a>
               </div>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </section>
 
 
       <footer class="footer">
